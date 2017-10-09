@@ -1,0 +1,19 @@
+{
+    "name": "playhq/requirements",
+    "description": "PlayHQ requirement files.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "David Lloyd",
+            "email": "jwickentower@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^3.3"
+    },
+    "require-dev": {
+        "behat/behat": "^3.4",
+        "phpunit/phpunit": "^6.4"
+    }
+}
