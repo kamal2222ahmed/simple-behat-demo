@@ -170,7 +170,7 @@ class Application
     }
 
     /**
-     * Logins the specified user.
+     * Logs in the specified user.
      *
      * @param string $username
      * @return void
