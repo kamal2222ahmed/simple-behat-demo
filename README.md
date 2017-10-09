@@ -14,16 +14,17 @@ with [Behat](http://behat.org/).
 ## Sample Run
 
 ```
-$ ./vendor/bin/behat --no-colors
 Feature: Teams
     In order to manage teams
     As a staff member
     I need to be able to create teams
 
-  Background:                # features\create_team.feature:6
-    Given user "test" exists # FeatureContext::userExists()
+  Background:                       # features\create_team.feature:20
+    Given user "admin" exists       # FeatureContext::userExists()
+    Given user "admin" is a "admin" # FeatureContext::userIsA()
+    Given user "test" exists        # FeatureContext::userExists()
 
-  Scenario Outline: Team Creating                                                      # features\create_team.feature:9
+  Scenario Outline: Team Creating                                                      # features\create_team.feature:25
     Given I am logged in as "admin"                                                    # FeatureContext::loggedInAs()
     When I register a user "<username>" with email "<email>" and password "<password>" # FeatureContext::iRegisterAUserWithEmailAndPassword()
     Then a user "<username>" with email "<email>" should exist                         # FeatureContext::aUserWithEmailShouldExist()
@@ -34,8 +35,8 @@ Feature: Teams
       | test_user2 | test_user2@test.com | test_user 2 |
 
 2 scenarios (2 passed)
-8 steps (8 passed)
-0m0.10s (7.79Mb)
+12 steps (12 passed)
+0m0.10s (7.80Mb)
 ```
 
 ## License

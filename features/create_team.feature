@@ -18,6 +18,8 @@ Feature: Teams
     I need to be able to create teams
 
 Background:
+    Given user "admin" exists
+    Given user "admin" is a "admin"
     Given user "test" exists
     
 Scenario Outline: Team Creating
