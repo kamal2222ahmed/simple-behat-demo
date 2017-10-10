@@ -7,7 +7,7 @@ with [Behat](http://behat.org/).
 
 ## Installation
 
-1. Clone this repository;
+1. Clone this repository
 2. Install its dependency using `composer install --prefer-dist`
 3. Run behat using `./vendor/bin/behat`
 
