@@ -1,6 +1,6 @@
 {
-    "name": "playhq/requirements",
-    "description": "PlayHQ requirement files.",
+    "name": "lloy0076/simple-behat-demo",
+    "description": "Simple Behat Demo",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
